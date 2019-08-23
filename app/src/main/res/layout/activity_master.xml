@@ -6,4 +6,29 @@
     android:layout_height="match_parent"
     tools:context=".MasterActivity">
 
+    <Switch
+        android:id="@+id/ble_switch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="56dp"
+        android:width="350dp"
+        android:height="50dp"
+        android:text="蓝牙"
+        android:showText="true"
+        android:textOff="关"
+        android:textOn="开"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ListView
+        android:id="@+id/listview_device"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:maxWidth="350dp"
+        android:maxHeight="100dp"
+        android:layout_marginTop="150dp"
+        tools:layout_editor_absoluteX="77dp"
+        tools:layout_editor_absoluteY="189dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
