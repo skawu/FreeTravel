@@ -35,7 +35,7 @@ public class MasterActivity extends AppCompatActivity {
             public void onCheckedChanged(CompoundButton buttonview, boolean isClicked) {
                 if(isClicked) {             // 打开蓝牙
                     // 判断系统是否支持蓝牙BLE
-                    if(getPackageManager().hasSystemFeature(PackageManager.FEATURE_BLUETOOTH_LE)) {
+                    if(!getPackageManager().hasSystemFeature(PackageManager.FEATURE_BLUETOOTH_LE)) {
                         Log.e("FreeTravel","Device Not Support BLE");
                         finish();
                     }
